@@ -1,3 +1,10 @@
+body {
+  padding-top: 76px;
+}
+
+html {
+  scroll-padding-top: 76px;
+}
 
 #home {
   height: 90vh;
