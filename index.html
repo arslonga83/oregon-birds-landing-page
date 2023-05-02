@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="index.js" defer></script>
 </head>
 <body>
 
@@ -128,24 +129,24 @@
         <p>Interested in joining us for a tour? Fill out the form below with your travel details and we will be in touch!</p>
       </div>
       <div class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-6 mx-auto">
-        <form action="" class="text-white">
+        <form action="" class="text-white" id="contact-form">
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" name="name">
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
-            <input type="text" class="form-control">
+            <input type="email" class="form-control" name="email">
           </div>
           <div class="mb-3">
             <label for="subject" class="form-label">Subject</label>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" name="subject">
           </div>
           <div class="mb-3">
             <label for="message" class="form-label">Message</label>
             <textarea name="message" cols="30" rows="10" class="form-control"></textarea>
           </div>
-          <button type="submit" class="btn btn-info btn-lg">Send Message</button>
+          <button type="submit" class="btn btn-info btn-lg" id="submit-btn">Send Message</button>
         </form>
       </div>
     </div>
