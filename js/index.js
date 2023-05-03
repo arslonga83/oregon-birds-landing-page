@@ -7,7 +7,7 @@ contactForm.addEventListener('submit', (e) => {
   const entries = formData.entries()
   const data = Object.fromEntries(entries)
 
-  fetch('http://127.0.0.1:3000', {
+  fetch('https://birding-site-contact-server.onrender.com/', {
     method: 'POST',
     headers: {
       'Content-Type': "application/json",
