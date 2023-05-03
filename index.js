@@ -1,4 +1,5 @@
 const contactForm = document.getElementById('contact-form')
+const myModal = new bootstrap.Modal(document.getElementById('myModal'))
 
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault()
@@ -14,7 +15,10 @@ contactForm.addEventListener('submit', (e) => {
     body: JSON.stringify(data),
   })
     .then(response => response.text())
-    .then(result => console.log(result))
+    .then(result => {
+      console.log(result)
+      myModal.show()
+      })
     .catch(error => console.log('error', error));
 
   contactForm.reset()
